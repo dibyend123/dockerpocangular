@@ -1,0 +1,26 @@
+
+
+Please provide following information for Login
+
+<br/>
+<br/>
+Username
+<input id="name" type="text" [(ngModel)]="username" name="usrEmail" #usrEmail="ngModel"/>
+<br/>
+Password
+
+<input id="name" type="password" [(ngModel)]="password"/>
+
+<br/>
+
+<div class="input-group" *ngIf="errorMessage!=null">
+    <span class="input-group-addon errMsgDesc">
+        <strong>{{errorMessage}}</strong>
+
+    </span>
+</div>
+
+<button type="button" class="btn btn-primary" (click)="onLogin()" type="submit">
+    Login
+</button>
+

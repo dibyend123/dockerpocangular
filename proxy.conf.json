@@ -1,0 +1,10 @@
+{
+    "/oauth": {
+      "target": "http://localhost:8080",
+      "secure": false
+    },
+    "/checkUser": {
+      "target": "http://localhost:8000",
+      "secure": false
+    }
+  }
